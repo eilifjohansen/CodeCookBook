@@ -16,9 +16,9 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/create-browser-extension-with-react/getting-started"
+            to="/docs/tutorials"
           >
-            Tutorials - 5min ⏱️
+            Learn To Code
           </Link>
         </div>
       </div>
