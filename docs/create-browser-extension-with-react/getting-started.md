@@ -16,6 +16,8 @@ cd my-browser-extension
 
 ### Modify manifest.json file in the public folder
 
+####  Manifest version 2
+
 ```javascript
 {
   "short_name": "Browser Extension",
@@ -37,7 +39,28 @@ cd my-browser-extension
 
 }
 ```
+####  Manifest version 3 (for Chrome)
 
+```javascript
+{
+  "short_name": "Browser Extension",
+  "name": "My Browser Extension",
+  "icons": {
+    "16": "favicon.ico",
+    "48": "logo192.png",
+   "128": "logo512.png"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "manifest_version": 3,
+  "version": "0.0.1",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "My Browser Extension",
+    "default_icon": "logo192.png"  }
+}
+```
 ### Change package.json
 
 #### Add scripts:
